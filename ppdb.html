@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>PPDB SMA Yos Sudarso Karawang</title>
+    <style>
+      
+        .navbar {
+            background: linear-gradient(135deg, #0033cc, #0066ff); /* Gradient background */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-brand:hover {
+            color: #ffcc00; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00; 
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .navbar-toggler-icon {
+            color: #ffffff; 
+        }
+
+        .dropdown-menu {
+            background: linear-gradient(135deg, #0033cc, #0066ff); 
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+        }
+
+        .dropdown-item {
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: #ffcc00; 
+            color: #0033cc; 
+        }
+
+        
+        .hero-section {
+            background: url('ppdb-banner.jpg') no-repeat center center/cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(152, 168, 166, 0.782);
+            z-index: 1;
+        }
+
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-section .btn-cta {
+            background-color: #ffcc00;
+            color: #0033cc;
+            font-weight: bold;
+            padding: 15px 30px;
+            font-size: 1.25rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-section .btn-cta:hover {
+            background-color: #ffffff;
+            color: #0033cc;
+        }
+
+    
+        .steps-section {
+            background-color: #f7f7f7;
+            padding: 60px 0;
+        }
+
+        .steps-section h2 {
+            color: #0033cc;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .step h3 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            color: #333333;
+        }
+
+        .info-cards {
+            padding: 60px 0;
+        }
+
+        .info-cards h2 {
+            color: #0033cc;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            color: #0033cc;
+        }
+
+        .card-text {
+            color: #333333;
+        }
+
+        .footer {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="yayasan.png" alt="Logo 1">
+                <img src="logo.png" alt="Logo 2">
+                SMA Yos Sudarso
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ppdb.html">PPDB</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Informasi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="aktifitas.html">Aktifitas Sekolah</a></li>
+                            <li><a class="dropdown-item" href="guru.html">Guru & Staf</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="osis.html">OSIS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="content">
+                <h1>PPDB SMA Yos Sudarso Karawang</h1>
+                <p>Bergabunglah bersama kami untuk masa depan yang lebih cemerlang</p>
+                <a href="https://www.sma-yosuka.sch.id/" class="btn btn-cta">Daftar Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <div class="container">
+            <h2>Tahapan Pendaftaran</h2>
+            <div class="row">
+                <div class="col-md-4 step">
+                    <img src="logo.png" alt="Daftar">
+                    <h3>1. Daftar</h3>
+                    <p>Isi formulir pendaftaran secara online melalui website resmi kami.</p>
+                </div>
+                <div class="col-md-4 step">
+                    <img src="logo.png" alt="Ujian">
+                    <h3>2. Ujian</h3>
+                    <p>Ikuti ujian seleksi yang diselenggarakan secara daring.</p>
+                </div>
+                <div class="col-md-4 step">
+                    <img src="logo.png" alt="Pengumuman">
+                    <h3>3. Pengumuman</h3>
+                    <p>Lihat hasil seleksi melalui website resmi kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Cards Section -->
+    <section class="info-cards">
+        <div class="container">
+            <h2>Apa yang membuat SMA Yos Sudarso Menarik?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="fasilitas.html" class="text-decoration-none">
+                        <div class="card">
+                            <img src="logo.png" class="card-img-top" alt="Info 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Fasilitas Sekolah</h5>
+                                <p class="card-text">sekolah SMA Yos Sudarso Karawang memberikan fasilitas yang menguhuni kegiatan pembelajarannya.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="eskul.html" class="text-decoration-none">
+                        <div class="card">
+                            <img src="logo.png" class="card-img-top" alt="Info 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Kegiatan Ekstrakurikuler</h5>
+                                <p class="card-text">Ikuti berbagai kegiatan ekstrakurikuler yang mendukung bakat dan minat Anda.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="osismenarik.html" class="text-decoration-none">
+                        <div class="card">
+                            <img src="logo.png" class="card-img-top" alt="Info 3">
+                            <div class="card-body">
+                                <h5 class="card-title">OSIS dan Kepemimpinan</h5>
+                                <p class="card-text">Bergabunglah dengan OSIS untuk mengembangkan jiwa kepemimpinan Anda.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SMA Yos Sudarso Karawang. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
