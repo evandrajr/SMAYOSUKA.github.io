@@ -1,0 +1,1 @@
+# SMAYOSUKA.github.io
